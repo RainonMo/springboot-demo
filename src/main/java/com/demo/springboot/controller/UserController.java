@@ -67,12 +67,6 @@ public class UserController {
     @Resource
     private UserServicePlus userServicePlus;
 
-    @GetMapping("/test1")
-    @ApiOperation(value = "测试查询")
-    public ReturnJson test1(){
-        return ReturnJson.ok(userServicePlus.findList());
-    }
-
     @ApiOperation(value = "测试")
     @RequestMapping(value = "/test", method = RequestMethod.POST)
     @ResponseBody
