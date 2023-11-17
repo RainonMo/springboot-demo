@@ -1,6 +1,9 @@
 package com.demo.springboot.common;
 
-
+/**
+ * 统一返回结果
+ * @param <T>
+ */
 public class CommonResult<T>  {
     private long code;
 
